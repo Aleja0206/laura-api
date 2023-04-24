@@ -1,7 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from routes.persons import router as persons_router
+from routes.planets import router as planet_router
 
 app = FastAPI()
+app.include_router(planet_router)
 app.include_router(persons_router)
 
 # search the middle item in array persons_lists

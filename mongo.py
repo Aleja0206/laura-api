@@ -1,6 +1,7 @@
 import csv
-from typing import Any, List
 import os
+from typing import List
+
 from bson import ObjectId
 from pydantic import BaseModel
 from pydantic_mongo import AbstractRepository, ObjectIdField
