@@ -1,5 +1,6 @@
-from models import Person, Friend
 from fastapi import FastAPI, HTTPException
+
+from models.models import Person, Friend
 
 
 def find_person_by_id(id:int, person:list[Person]):
